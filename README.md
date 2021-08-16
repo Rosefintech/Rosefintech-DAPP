@@ -31,7 +31,7 @@
 
 
 ## Install
-- This project uses [vue](https://github.com/vuejs/vue). Go check them out if you don't have them locally installed.
+- This project uses [Vue](https://github.com/vuejs/vue). Go check them out if you don't have them locally installed.
 ```
 yarn install
 ```

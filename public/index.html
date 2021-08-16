@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"
+      name="viewport"
+    />
+    <meta http-equiv="Expires" CONTENT="0">
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">
+    <meta http-equiv="Pragma" CONTENT="no-cache">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      html,
+      body,
+      #app {
+        margin: 0px;
+        padding: 0px;
+        background: #f7f7f7;
+      }
+      #loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 200;
+      }
+      #loader {
+        position: relative;
+        display: block;
+        left: 50%;
+        top: 50%;
+        width: 100px;
+        height: 100px;
+        margin: -50px 0 0 -50px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #5ab1ef;
+        animation: spin 2s linear infinite;
+        z-index: 201;
+      }
+      #loader:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #2ec7c9;
+        animation: spin 3s linear infinite;
+      }
+      #loader:after {
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #b6a2de;
+        animation: spin 1.5s linear infinite;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .loaded #loader {
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+      .loaded #loader-wrapper {
+        visibility: hidden;
+        transform: translateY(-100%);
+        transition: all 0.3s 1s ease-out;
+      }
+      /* JavaScript Turned Off */
+      .no-js #loader-wrapper {
+        display: none;
+      }
+      .no-js h1 {
+        color: #222222;
+      }
+      #loader-wrapper .load_title {
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        line-height: 30px;
+        color: #515a6e;
+        font-size: 19px;
+        text-align: center;
+        font-family: 'Open Sans';
+        z-index: 201;
+        opacity: 1;
+      }
+      #loader-wrapper .load_title .ver {
+        font-weight: normal;
+        font-style: italic;
+        font-size: 13px;
+        color: #515a6e;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.
+      </strong>
+    </noscript>
+    <div id="app">
+      <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="load_title"></div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

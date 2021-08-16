@@ -1,0 +1,238 @@
+@font-face {
+  font-family: TsangerYunHei;
+  src: url(../fonts/TSANGERYUNHEI-W01.TTF)
+  /* src: url(/fonts/TSANGERYUNHEI-W01.TTF) */
+}
+@font-face {
+  font-family: TsangerYunHei-W03;
+  src: url(../fonts/TSANGERYUNHEI-W03.TTF)
+}
+@font-face {
+  font-family: TsangerYunHei;
+  src: url(../fonts/TSANGERYUNHEI-W03.TTF)
+  /* src: url(/fonts/POPPINS-LIGHT.TTF) */
+}
+@font-face {
+  font-family: TsangerYunHei-W02;
+
+  src: url(../fonts/TSANGERYUNHEI-W02.TTF)
+}
+@font-face {
+  font-family: TsangerYunHei-W01;
+  src: url(../fonts/TSANGERYUNHEI-W01.TTF)
+}
+body,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background: #f5f6fd;
+}
+input {
+  border: none;
+  caret-color: #330066;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+input:focus {
+  border: none;
+  /* color: #330066 !important; */
+  color: #091d42 !important;
+}
+::-webkit-input-placeholder {
+  color: #adb0ca;
+}
+::-moz-placeholder {
+  color: #adb0ca;
+} /* firefox 19+ */
+:-ms-input-placeholder {
+  color: #adb0ca;
+} /* ie */
+input:-moz-placeholder {
+  color: #adb0ca;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+.btn {
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 40px;
+  font-size: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+.btn-dark {
+  border: 2px solid #330066;
+  background: #330066;
+  color: #fff;
+}
+.btn-light {
+  background: #fff;
+  color: #330066;
+  border: 2px solid #330066;
+}
+.btn-light[disabled],
+.btn-light.disabled {
+  background: #fff;
+  color: #babbc2 !important;
+  border: 2px solid #babbc2 !important;
+}
+.btn-dark[disabled],
+.btn-dark.disabled {
+  border: 2px solid #330066 !important;
+  background: #330066 !important;
+  color: #fff !important;
+  opacity: 0.4 !important;
+}
+
+.dialog-box {
+  background: rgba(255, 255, 255, 0) !important;
+  width: 640px !important;
+}
+.dialog-content {
+  padding: 60px 40px;
+  background-color: #fff;
+  border-radius: 40px;
+}
+.dialog-content .dialog-tit {
+  font-size: 36px;
+  color: #091d42;
+}
+.dialog-content .dialog-tit-en {
+  font-size: 32px;
+  color: #091d42;
+}
+.cancel-box {
+  margin-top: 75px;
+}
+.cancel-box .cancel-btn {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+.content-bg {
+  background-color: #330066;
+  border-radius: 0 0 50px 50px;
+  height: 150px;
+  margin-top: -1px;
+}
+
+#app .van-nav-bar {
+  background-color: #330066;
+}
+#app .van-nav-bar__content {
+  height: 110px;
+}
+#app .van-nav-bar .van-icon {
+  color: #fff;
+  font-size: 36px;
+}
+#app .van-nav-bar__title {
+  color: #fff;
+  font-size: 36px;
+}
+
+.loading-text {
+  font-size: 22px;
+  color: #adb0ca;
+  text-align: right;
+}
+
+.red {
+  color: #f90066;
+}
+.bg-red {
+  background-color: #f90066;
+}
+.down {
+  color: #55ad5c;
+}
+.light-gray {
+  color: #adb0ca;
+}
+.purple {
+  color: #5830c5;
+}
+
+.help-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.help-icon {
+  width: 32px;
+  height: 32px;
+  padding-left: 10px;
+}
+
+.tip-panel {
+  position: absolute;
+  left: -28px;
+  top: 60px;
+  width: 16em;
+  padding: 20px 20px;
+  border-radius: 20px;
+  color: #adb0ca;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 10;
+  text-align: left;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(158, 152, 153, 0.31);
+  border-radius: 10px;
+}
+.tip-panel::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -24px;
+  left: 40px;
+  border: 12px solid transparent;
+  border-bottom-color: #9e98994f;
+}
+@media only screen and (max-width: 750px) {
+  .pc {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+    touch-action: auto !important;
+  }
+}
+@media only screen and (min-width: 751px) {
+  .pc {
+    display: block !important;
+  }
+  .mobile {
+    display: none !important;
+    touch-action: auto !important;
+  }
+}

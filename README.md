@@ -61,7 +61,7 @@ yarn serve
 
 ## Contact
 
- E-MAIL: orbit@rosefin.tech
+ E-MAIL: dev.rosefintech@gmail.com
 
 
 ## License

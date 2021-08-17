@@ -27,6 +27,8 @@
 ## Table of Contents
 
 - [Install](#install)
+- [Community](#community)
+- [Contact](#contact)
 - [License](#license)
 
 
@@ -53,7 +55,13 @@ yarn serve
 ```
  yarn init
 ```
+## Community
 
+ DISCORD: [https://discord.gg/FEX4cBgHbR](https://discord.gg/FEX4cBgHbR)
+
+## Contact
+
+ E-MAIL: orbit@rosefin.tech
 
 
 ## License

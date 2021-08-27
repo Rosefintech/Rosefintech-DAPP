@@ -4,8 +4,6 @@
     <transition v-else :name="transitionName">
       <router-view class="router mobile" v-if="routerState" />
     </transition>
-
-
     <DialogDapp ref="dialogDapp" />
     <DialogShareQR ref="dialogShareQR" />
     <DialogSwapRos />
@@ -234,5 +232,4 @@ export default {
     transform: translate3d(-100%, 0, 0);
   }
 }
-
 </style>

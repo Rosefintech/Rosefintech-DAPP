@@ -9,9 +9,6 @@ module.exports = {
     
     proxy: {
       '/api': {
-        
-        
-        
       target: 'http:
         changeOrigin: true, 
         pathRewrite: {
@@ -45,8 +42,6 @@ module.exports = {
           parallel: true, 
         })
       )]
-
-      
       config.optimization.splitChunks = {
         
         

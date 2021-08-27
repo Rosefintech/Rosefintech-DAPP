@@ -1,6 +1,6 @@
 {
   "name": "Rosefintech",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -63,7 +63,7 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": { }
   },
   "browserslist": [
     "> 1%",
